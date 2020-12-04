@@ -1,10 +1,3 @@
-//DOM Objects
-const pokeName = document.querySelector('.card__header__details-name');
-const pokeId = document.querySelector('.poke-id');
-const pokeType = document.querySelector('.poke-type');
-
-console.log(pokeName, pokeId, pokeType);
-
 document.addEventListener('DOMContentLoaded', () =>{
     const random = (getRandomInt(1, 151));
     fetchData(random);
@@ -59,7 +52,7 @@ const renderizeCard = (pokemon) => {
     clone.querySelectorAll('.card-footer__stats p')[2].textContent = pokemon.exp;
     clone.querySelectorAll('.card-footer__stats p')[4].textContent = pokemon.defense;
 
-
-    fragment.appendChild(clone)
-    container.appendChild(fragment)
+ 
+    fragment.appendChild(clone);
+    container.appendChild(fragment);
 }
