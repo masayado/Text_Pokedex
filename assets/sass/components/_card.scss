@@ -1,0 +1,150 @@
+.card{
+    background-color: $white;
+    width: 350px;
+    height: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 10px 11px 33px -15px rgba(45,43,43,0.75);
+    -webkit-box-shadow: 10px 11px 33px -15px rgba(45,43,43,0.75);
+    -moz-box-shadow: 10px 11px 33px -15px rgba(45,43,43,0.75);
+}
+
+.card__header{
+    width: 100%;
+    height: 250px;
+    background-color:$grass;
+    background-image: url('../img/poke_bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 450px auto;
+    padding: 35px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+&__details{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    z-index: 1;
+    }
+}
+
+h1{
+    color: $white;
+    font-size: $x-large;
+    margin:0;
+}
+
+h3{
+    color: $white;
+    font-weight: 100;
+    font-size: $medium;
+    margin:0;
+}
+
+.card__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+&__img{
+    width: 170px;
+    height: auto;
+    display:block;
+    margin-top:-140px;
+    position: relative;
+    z-index:1;
+    }
+
+&__info{
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top:-40px;
+    }
+
+&__types{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+&__types-1{
+    margin-top: 60px;
+    width: 100px;
+    height: 25px;
+    display:inline-block;
+    color:$white;
+    background-color: $grass;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 15px;
+    font-variant: small-caps;
+    font-size: $x-medium;
+    }
+
+&__types-1 > p{
+    margin:0;
+    }
+}
+
+.card__data{
+    padding: 5px 35px 35px 35px;
+}
+
+h2{
+    font-size:$x-medium;
+    margin:12px 0px 12px 0px;
+    color:$grass;
+    text-align: center;
+}
+
+.card__data-title{
+    margin:0px;
+    line-height: 1.6;
+    font-size:$small;
+}
+
+.card__data__info-title{
+    margin:0;
+    font-size:$small;
+    line-height: 1.6;
+    font-weight: 700;
+    color: $text;
+}
+
+.card__data__info-d{
+    font-size:$small;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+
+&__stats{
+    text-align: center;
+    }
+
+&__stats-number{
+    margin: 0px 0px 5px 0px;
+    font-size: $large;
+    font-weight:700;
+    color:$text;
+    }
+
+&__stats-desc{
+    margin:0;
+    font-size:$small;
+    color: $text;
+    }
+}

@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #ebedf5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 350px;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 10px 11px 33px -15px rgba(45, 43, 43, 0.75);
+  -webkit-box-shadow: 10px 11px 33px -15px rgba(45, 43, 43, 0.75);
+  -moz-box-shadow: 10px 11px 33px -15px rgba(45, 43, 43, 0.75);
+}
+
+.card__header {
+  width: 100%;
+  height: 250px;
+  background-color: #8bbe8a;
+  background-image: url("../img/poke_bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 450px auto;
+  padding: 35px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.card__header__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0;
+}
+
+h3 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0;
+}
+
+.card__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__body__img {
+  width: 170px;
+  height: auto;
+  display: block;
+  margin-top: -140px;
+  position: relative;
+  z-index: 1;
+}
+.card__body__info {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: -40px;
+}
+.card__body__types {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.card__body__types-1 {
+  margin-top: 60px;
+  width: 100px;
+  height: 25px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #8bbe8a;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 15px;
+  font-variant: small-caps;
+  font-size: 17px;
+}
+.card__body__types-1 > p {
+  margin: 0;
+}
+
+.card__data {
+  padding: 5px 35px 35px 35px;
+}
+
+h2 {
+  font-size: 17px;
+  margin: 12px 0px 12px 0px;
+  color: #8bbe8a;
+  text-align: center;
+}
+
+.card__data-title {
+  margin: 0px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.card__data__info-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #191919;
+}
+
+.card__data__info-d {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 25px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-footer__stats {
+  text-align: center;
+}
+.card-footer__stats-number {
+  margin: 0px 0px 5px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+}
+.card-footer__stats-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #191919;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="./assets/img/Pokeball_Black-01.svg">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<main class="container"></main>
+
+<template id="template-card">
+    <article class="card">
+        <div class="card__header">
+            <div class="card__header__details">
+                <h1 class="poke-name">Bulbasaur</h1>
+                <h3 class="poke-id">#001</h3>
+            </div>
+        </div>
+
+        <div class="card__body">
+            <img class="card__body__img" src="./assets/img/1.png" alt="Foto Pokemon">
+        <div class="card__body__info">
+            <div class="card__body__types">
+                <span class="card__body__types-1">
+                    <p class="poke-type">grass</p>
+                </span>
+            </div>
+        </div>
+        </div>
+
+        <div class="card__data">
+            <h2 class="card__data__title">Pokédex Data</h2>
+            <div class="card__data__info">
+                <p class="card__data__info-title">Height: &nbsp;<span class="card__data__info-d">5</span></p>
+                <p class="card__data__info-title">Weight: <span class="card__data__info-d">5</span></p>
+                <p class="card__data__info-title">Ability: &nbsp;<span class="card__data__info-d">5</span></p>
+
+                <h2 class="card__data__title-stats">Stats</h2>
+
+                <div class="card-footer">
+                    <div class="card-footer__stats">
+                        <p class="card-footer__stats-number">80K</p>
+                        <p class="card-footer__stats-desc">Attack</p>
+                    </div>
+                    <div class="card-footer__stats">
+                        <p class="card-footer__stats-number">803K</p>
+                        <p class="card-footer__stats-desc">Special Attack</p>
+                    </div>
+                    <div class="card-footer__stats">
+                        <p class="card-footer__stats-number">1.4K</p>
+                        <p class="card-footer__stats-desc">Defense</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</template>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
