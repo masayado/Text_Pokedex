@@ -104,7 +104,7 @@ h3 {
   font-weight: 700;
   border-radius: 15px;
   font-variant: small-caps;
-  font-size: 17px;
+  font-size: 18px;
 }
 .card__body__types-1 > p {
   margin: 0;
@@ -115,8 +115,8 @@ h3 {
 }
 
 h2 {
-  font-size: 17px;
-  margin: 12px 0px 12px 0px;
+  font-size: 18px;
+  margin: 12px 0px 20px 0px;
   color: #c7ccce;
   text-align: center;
 }
