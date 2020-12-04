@@ -23,12 +23,14 @@ const fetchData = async (id) => {
         console.log(data);
 
         const pokemon = {
-            img: data.sprites.other.dream_world.front_default,
+            img: `https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`,
+            img_2: data.sprites.other.dream_world.front_default,
             name: data.name,
             id: data.id,
+            type: data.types[0].type.name,
+            ability:data.abilities[0].ability.name,
             height: data.height,
             weight: data.weight,
-            species:data.species.name,
             attack: data.stats[1].base_stat,
             exp: data.base_experience,
             defense: data.stats[3].base_stat,
@@ -48,7 +50,11 @@ const renderizeCard = (pokemon) => {
 
     clone.querySelector('.card__header__details-name').innerHTML = `${pokemon.name}`;
     clone.querySelector('.poke-id').innerHTML = '#' + `${pokemon.id}`;
+    clone.querySelector('.poke-type').innerHTML = `${pokemon.type}`;
     clone.querySelector('.card__body__img').setAttribute('src', pokemon.img);
+    clone.querySelectorAll('.card__data__info-d')[0].textContent = pokemon.ability;
+    clone.querySelectorAll('.card__data__info-d')[1].textContent = pokemon.height;
+    clone.querySelectorAll('.card__data__info-d')[2].textContent = pokemon.weight;
     clone.querySelectorAll('.card-footer__stats p')[0].textContent = pokemon.attack;
     clone.querySelectorAll('.card-footer__stats p')[2].textContent = pokemon.exp;
     clone.querySelectorAll('.card-footer__stats p')[4].textContent = pokemon.defense;
