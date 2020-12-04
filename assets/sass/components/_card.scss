@@ -34,6 +34,7 @@ h1{
     color: $white;
     font-size: $x-large;
     margin:0;
+    text-transform: capitalize;
 }
 
 h3{
@@ -124,7 +125,7 @@ h2{
 .card__data__info-d{
     font-size:$small;
     font-weight: 400;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .card-footer{

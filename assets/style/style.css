@@ -52,6 +52,7 @@ h1 {
   color: #ffffff;
   font-size: 30px;
   margin: 0;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -137,7 +138,7 @@ h2 {
 .card__data__info-d {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .card-footer {
